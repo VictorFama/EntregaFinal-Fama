@@ -1,0 +1,8 @@
+.cart-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart-link:hover {
+    color: #00ADB5;
+}

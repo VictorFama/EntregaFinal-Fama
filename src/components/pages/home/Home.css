@@ -1,0 +1,30 @@
+.home-figure {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.home-title{
+    text-align: center;
+    margin-top: 30px;
+    color: #00ADB5;
+    font-size: 3.5rem;
+}
+
+.home-info {
+  padding: 0 20px;
+  margin: 40px 0;
+}
+
+.home-subtitle{
+    color: #00ADB5;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.home-text{
+    font-size: 1.2rem;
+    color: #ccc9c9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}

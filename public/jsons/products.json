@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop Dell XPS 13",
+    "description": "Ultrabook con procesador Intel Core i7 y pantalla InfinityEdge de 13.4 pulgadas.",
+    "price": 1899.99,
+    "category": "Laptops",
+    "stock": 15,
+    "image": "https://cdn.mos.cms.futurecdn.net/46AkJQeyNiw4hahATrfdr9-1200-80.jpg"
+  },
+  {
+    "id": 2,
+    "title": "MacBook Air M2",
+    "description": "Laptop ligera con chip M2, 8 GB de RAM y 512 GB SSD.",
+    "price": 1799.00,
+    "category": "Laptops",
+    "stock": 10,
+    "image": "https://fcracer.com/wp-content/uploads/2022/08/GFXS8814-JPEG-blog-1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "HP Spectre x360",
+    "description": "Convertible 2 en 1 con pantalla táctil OLED de 14 pulgadas.",
+    "price": 1699.00,
+    "category": "Laptops",
+    "stock": 12,
+    "image": "https://ar-media.hptiendaenlinea.com/magefan_blog/hero-spectre-x360.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Asus ROG Zephyrus G14",
+    "description": "Laptop gamer con AMD Ryzen 9 y GPU RTX 4070.",
+    "price": 2499.00,
+    "category": "Laptops",
+    "stock": 8,
+    "image": "https://www.amd.com/content/dam/amd/en/images/products/laptops/2201103-amd-advantage-laptop-rog-zephyrus-g14-video-thumbnail.png"
+  },
+  {
+    "id": 5,
+    "title": "Lenovo ThinkPad X1 Carbon",
+    "description": "Ultrabook empresarial con chasis de fibra de carbono y 1 TB SSD.",
+    "price": 1999.99,
+    "category": "Laptops",
+    "stock": 5,
+    "image": "https://i0.wp.com/cdnssl.ubergizmo.com/wp-content/uploads/2022/09/lenovo-thinkpad-carbon-x1-gen10_07.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Acer Swift 5",
+    "description": "Notebook ligera con pantalla Full HD y procesador Intel Core i5.",
+    "price": 1099.00,
+    "category": "Laptops",
+    "stock": 20,
+    "image": "https://cdn.mos.cms.futurecdn.net/6dRXfPUXdYArE5xPcExFLS.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Microsoft Surface Laptop 5",
+    "description": "Portátil premium con pantalla táctil PixelSense de 13.5 pulgadas.",
+    "price": 1599.00,
+    "category": "Laptops",
+    "stock": 9,
+    "image": "https://s.yimg.com/ny/api/res/1.2/V8V37NTUMbJDBCwuiTl3Mg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xNDQw/https://s.yimg.com/os/creatr-uploaded-images/2022-11/c3c99bb0-5c67-11ed-af6f-716a8651bf9d"
+  },
+  {
+    "id": 8,
+    "title": "Razer Blade 15",
+    "description": "Laptop gamer con RTX 4080 y pantalla QHD 240Hz.",
+    "price": 2999.00,
+    "category": "Laptops",
+    "stock": 6,
+    "image": "https://assets2.razerzone.com/images/og-image/new-razer-blade-15-OG-1200x630.jpg"
+  },
+  {
+    "id": 9,
+    "title": "iPhone 15 Pro",
+    "description": "Smartphone con chip A17 Pro y pantalla OLED de 6.1 pulgadas.",
+    "price": 1299.00,
+    "category": "Smartphones",
+    "stock": 20,
+    "image": "https://d2r9epyceweg5n.cloudfront.net/stores/004/909/215/rte/iPhone-15-Pro-Lineup-Feature.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Samsung Galaxy S24 Ultra",
+    "description": "Teléfono insignia con cámara de 200 MP y pantalla Dynamic AMOLED 2X.",
+    "price": 1399.00,
+    "category": "Smartphones",
+    "stock": 25,
+    "image": "https://i.ebayimg.com/thumbs/images/g/7WQAAeSw8hNo6Q2U/s-l1200.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Google Pixel 8 Pro",
+    "description": "Cámara avanzada con inteligencia artificial y Android 14 puro.",
+    "price": 1199.00,
+    "category": "Smartphones",
+    "stock": 18,
+    "image": "https://media.wired.com/photos/651c68d69132e1b7f804211c/3:2/w_2560%2Cc_limit/Google-Pixel-8-Event-Gear.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Xiaomi 14 Pro",
+    "description": "Smartphone con pantalla AMOLED y procesador Snapdragon 8 Gen 3.",
+    "price": 999.00,
+    "category": "Smartphones",
+    "stock": 22,
+    "image": "https://i.blogs.es/3685a5/4853/650_1200.png"
+  },
+  {
+    "id": 13,
+    "title": "OnePlus 12",
+    "description": "Rendimiento de gama alta con carga rápida de 120W.",
+    "price": 1099.00,
+    "category": "Smartphones",
+    "stock": 16,
+    "image": "https://culturageek.com.ar/wp-content/uploads/2024/01/oneplus-11.webp"
+  },
+  {
+    "id": 14,
+    "title": "Motorola Edge 40",
+    "description": "Pantalla curva pOLED y batería de larga duración.",
+    "price": 799.00,
+    "category": "Smartphones",
+    "stock": 14,
+    "image": "https://i.blogs.es/74eb01/motorola-edge-40-neo-portada/500_333.webp"
+  },
+  {
+    "id": 15,
+    "title": "Asus Zenfone 10",
+    "description": "Teléfono compacto con Snapdragon 8 Gen 2.",
+    "price": 899.00,
+    "category": "Smartphones",
+    "stock": 11,
+    "image": "https://static2.pisapapeles.net/uploads/2023/06/Asus-Zenfone-10-01.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Sony Xperia 1 V",
+    "description": "Teléfono con cámara profesional Zeiss y pantalla 4K HDR.",
+    "price": 1399.00,
+    "category": "Smartphones",
+    "stock": 8,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUxinlY1fEl0pgkykTlpp877Obko8gzMt6hA&s"
+  },
+  {
+    "id": 17,
+    "title": "Samsung 55'' QLED 4K",
+    "description": "Smart TV con procesador Quantum y HDR10+.",
+    "price": 999.99,
+    "category": "Televisores",
+    "stock": 10,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/qn55q65dagczb/gallery/ar-qled-q60d-qn55q65dagczb-545365187?$624_468_PNG$"
+  },
+  {
+    "id": 18,
+    "title": "LG OLED C3 65''",
+    "description": "Televisor OLED 4K con Dolby Vision y sonido AI.",
+    "price": 1899.00,
+    "category": "Televisores",
+    "stock": 7,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_909552-MLA96103247385_102025-O.webp"
+  },
+  {
+    "id": 19,
+    "title": "Sony Bravia XR 75''",
+    "description": "Smart TV con Cognitive Processor XR y Google TV.",
+    "price": 2799.00,
+    "category": "Televisores",
+    "stock": 5,
+    "image": "https://m.media-amazon.com/images/I/81+TH8IIf+L.jpg"
+  },
+  {
+    "id": 20,
+    "title": "TCL QLED 55''",
+    "description": "Smart TV con Roku integrado y panel QLED.",
+    "price": 799.00,
+    "category": "Televisores",
+    "stock": 20,
+    "image": "https://http2.mlstatic.com/D_Q_NP_770000-MLA91056665262_092025-O.webp"
+  },
+  {
+    "id": 21,
+    "title": "Hisense U8K 65''",
+    "description": "Televisor Mini-LED con compatibilidad HDR10+ y Dolby Atmos.",
+    "price": 1299.00,
+    "category": "Televisores",
+    "stock": 9,
+    "image": "https://m.media-amazon.com/images/I/71xzu6Haz4L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Philips Ambilight 58''",
+    "description": "TV 4K con sistema Ambilight envolvente y Android TV.",
+    "price": 999.00,
+    "category": "Televisores",
+    "stock": 12,
+    "image": "https://images.philips.com/is/image/philipsconsumer/337ccbe9830d4ed08cdaafb6011db787?$pnglarge$&wid=1250"
+  },
+  {
+    "id": 23,
+    "title": "Panasonic 50'' LED 4K",
+    "description": "Televisor LED con sistema inteligente My Home Screen.",
+    "price": 699.00,
+    "category": "Televisores",
+    "stock": 15,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_831659-MLU77622719607_072024-O.webp"
+  },
+  {
+    "id": 24,
+    "title": "Xiaomi Mi TV P1 55''",
+    "description": "Smart TV con Android TV, HDR10 y Chromecast integrado.",
+    "price": 649.00,
+    "category": "Televisores",
+    "stock": 25,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_989369-MLA70696269416_072023-O.webp"
+  },
+  {
+    "id": 25,
+    "title": "Apple Watch Series 9",
+    "description": "Reloj inteligente con chip S9 y monitor de salud avanzado.",
+    "price": 499.00,
+    "category": "Wearables",
+    "stock": 18,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-X5hh5TOEaYTLYxGso9D9CCleGp7inS5-GrlCerOABlvSNcllnFO1scy0Nm1uXlicggc&usqp=CAU"
+  },
+  {
+    "id": 26,
+    "title": "Samsung Galaxy Watch 6",
+    "description": "Smartwatch con pantalla Super AMOLED y ECG integrado.",
+    "price": 399.00,
+    "category": "Wearables",
+    "stock": 22,
+    "image": "https://images.samsung.com/is/image/samsung/assets/ar/galaxy-watch6/feature/galaxy-watch6-safety-mo.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Fitbit Charge 6",
+    "description": "Pulsera deportiva con GPS y sensores cardíacos avanzados.",
+    "price": 199.00,
+    "category": "Wearables",
+    "stock": 30,
+    "image": "https://imageio.forbes.com/specials-images/imageserve/6518676ab1a42d8a3d93d7e2/Fitbit-Charge-6--L--and-Fitbit-Charge-5--R--/960x0.jpg?format=jpg&width=960"
+  },
+  {
+    "id": 28,
+    "title": "Garmin Forerunner 965",
+    "description": "Reloj GPS premium para deportistas con pantalla AMOLED.",
+    "price": 599.00,
+    "category": "Wearables",
+    "stock": 12,
+    "image": "https://res.cloudinary.com/it-production/image/upload/v1673968605/Product_Images/en/products/010-02809-00/g/5-MOBILE-ON-WRIST-EMEA.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Huawei Watch GT 4",
+    "description": "Reloj con batería de 2 semanas y monitoreo de oxígeno.",
+    "price": 349.00,
+    "category": "Wearables",
+    "stock": 15,
+    "image": "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/latam/common/launch/2025/0919/plp/wearables/product-shelf-and-pop-up/watch-ultimate-series/watch-ultimate-2-kv-poster-pc.jpg"
+  },
+  {
+    "id": 30,
+    "title": "Amazfit T-Rex 2",
+    "description": "Smartwatch resistente con GPS y 24 días de batería.",
+    "price": 249.00,
+    "category": "Wearables",
+    "stock": 18,
+    "image": "https://cdn.mos.cms.futurecdn.net/muK6CvdnnH5CpJpDN7AxRh.jpeg"
+  },
+  {
+    "id": 31,
+    "title": "Xiaomi Smart Band 8",
+    "description": "Pulsera inteligente con pantalla AMOLED y monitoreo de sueño.",
+    "price": 79.00,
+    "category": "Wearables",
+    "stock": 35,
+    "image": "https://images.bidcom.com.ar/resize?src=https://static.bidcom.com.ar/publicacionesML/productos/XIABACTX/1200x900-XIABACTX-1.jpg&h=400&q=100"
+  },
+  {
+    "id": 32,
+    "title": "Polar Vantage V3",
+    "description": "Reloj deportivo con métricas avanzadas de entrenamiento.",
+    "price": 549.00,
+    "category": "Wearables",
+    "stock": 10,
+    "image": "https://external-preview.redd.it/vantage-v3-officially-available-in-the-polar-store-v0-XE1Yln9NLMlDRanNdJ8mI3lGLMO6DWXCYnFN3Zb5uFE.jpg?auto=webp&s=9d18575b0b0c1773b060591e6c3b65276d1ecc1f"
+  },
+  {
+    "id": 33,
+    "title": "Sony WH-1000XM5",
+    "description": "Auriculares con cancelación de ruido líder en su clase.",
+    "price": 399.00,
+    "category": "Audio",
+    "stock": 25,
+    "image": "https://i.blogs.es/4d8f06/sony-1000xm5-opinion/650_1200.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Apple AirPods Pro 2",
+    "description": "Auriculares inalámbricos con cancelación activa de ruido.",
+    "price": 299.00,
+    "category": "Audio",
+    "stock": 30,
+    "image": "https://i.blogs.es/4d51b0/airpods-pro/450_1000.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Bose QuietComfort Ultra",
+    "description": "Auriculares premium con audio espacial y cancelación avanzada.",
+    "price": 429.00,
+    "category": "Audio",
+    "stock": 20,
+    "image": "https://assets.bosecreative.com/transform/3da57f9f-6fda-4fab-b8a8-4a9bd466ebf8/SF_QCUH_Quality_Sandstone_456x456_x2?io=transform:crop,height:912,width:912,path:square&quality=95"
+  },
+  {
+    "id": 36,
+    "title": "JBL Charge 5",
+    "description": "Parlante Bluetooth portátil con batería de 20 horas.",
+    "price": 179.00,
+    "category": "Audio",
+    "stock": 40,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPwsHeP3nPGHI0M24AHryktlGUwfWbtBlOQ&s"
+  },
+  {
+    "id": 37,
+    "title": "Logitech Z407",
+    "description": "Sistema de altavoces 2.1 con Bluetooth y subwoofer.",
+    "price": 149.00,
+    "category": "Audio",
+    "stock": 14,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxH7I5G_mXg5_GxGKXL0eqHgFmHVekCSD_g&s"
+  },
+  {
+    "id": 38,
+    "title": "Sennheiser Momentum 4",
+    "description": "Auriculares inalámbricos de alta fidelidad con cancelación activa.",
+    "price": 379.00,
+    "category": "Audio",
+    "stock": 17,
+    "image": "https://hifigo.com/cdn/shop/products/sennheiser-momentum-4-wireless-bluetooth-headphone-for-crystal-clear-calls-hifigo-145814.jpg?v=1661442865&width=2048"
+  },
+  {
+    "id": 39,
+    "title": "Marshall Stanmore III",
+    "description": "Parlante con diseño retro y sonido potente.",
+    "price": 499.00,
+    "category": "Audio",
+    "stock": 10,
+    "image": "https://images.bauerhosting.com/affiliates/sites/8/2023/08/feature-1.png?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80"
+  },
+  {
+    "id": 40,
+    "title": "Anker Soundcore Liberty 4",
+    "description": "Auriculares True Wireless con audio espacial y ANC.",
+    "price": 159.00,
+    "category": "Audio",
+    "stock": 28,
+    "image": "https://i.rtings.com/assets/products/jGtrDtlW/anker-soundcore-liberty-4-nc-truly-wireless/design-medium.jpg?format=auto"
+  }
+]

@@ -1,0 +1,28 @@
+.item-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1E1E1E;
+  border: 1px solid #3A3F4B;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.item-count-btn {
+  background-color: #00ADB5;
+  color: #E6E6E6;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.item-count-btn:hover {
+  background-color: #019CA4;
+  box-shadow: 0 4px 12px rgba(0, 173, 181, 0.5);
+}
+
+
