@@ -1,15 +1,14 @@
+/*base*/
 .footer-propio {
-  background-color: #1E1E1E;
-  color: #E0E0E0;
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid #242424;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-text {
   margin-bottom: 10px;
   font-size: 0.9rem;
-  color: #B0B0B0;
+  transition: color 0.3s ease;
 }
 
 .footer-icons {
@@ -19,12 +18,46 @@
 }
 
 .logo-footer {
-  color: #E0E0E0;
   font-size: 1.5rem;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.logo-footer:hover {
+/*dark*/
+.footer-propio.dark {
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-top: 1px solid #242424;
+}
+
+.footer-propio.dark .footer-text {
+  color: #B0B0B0;
+}
+
+.footer-propio.dark .logo-footer {
+  color: #E0E0E0;
+}
+
+.footer-propio.dark .logo-footer:hover {
   color: #00ADB5;
+  transform: scale(1.2);
+}
+
+/*light*/
+.footer-propio.light {
+  background-color: #ffffff;
+  color: #1F2937;
+  border-top: 1px solid #DCE3EE;
+}
+
+.footer-propio.light .footer-text {
+  color: #6B7280;
+}
+
+.footer-propio.light .logo-footer {
+  color: #1F2937;
+}
+
+.footer-propio.light .logo-footer:hover {
+  color: #3B82F6;
   transform: scale(1.2);
 }

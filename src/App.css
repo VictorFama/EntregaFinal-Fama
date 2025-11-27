@@ -1,3 +1,4 @@
+/*base*/
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +8,22 @@
 .principal {
   text-align: center;
 }
+
 body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/*dark*/
+body.dark {
   background-color: #2B2F3A;
   color: #E6E6E6;
-  font-family: 'Poppins', sans-serif;
+}
+
+
+/*light*/
+body.light {
+  background-color: #F3F6FB;
+  color: #1F2937;            
 }

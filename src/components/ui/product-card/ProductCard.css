@@ -1,9 +1,9 @@
+/*base*/
 .product-card {
   width: 100%;
   border-radius: 0.75rem;
   overflow: hidden;
-  border: 1px solid #3A3F4B;
-  background-color: #343A46;
+  border: 1px solid;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -13,30 +13,22 @@
   width: 100%;
 }
 
-.card-body {
+.product-card .card-body {
   padding: 1rem;
   text-align: center;
-  background-color: #2B2F3A;
-  color: #E0E0E0;
-  border-top: 1px solid #3A3F4B;
-  border-bottom: 1px solid #3A3F4B;
 }
 
 .card-price {
   padding: 1rem;
-  background-color: #1C1F26;
-  color: #E6E6E6;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #3A3F4B;
 }
 
 .card-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #E6E6E6;
 }
 
 .product-card:hover {
@@ -45,23 +37,91 @@
 }
 
 .btn-detail {
-  background-color: #00ADB5;
   border: none;
-  color: #FFFFFF;
   font-weight: 600;
   padding: 0.45rem 1.1rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+/*dark*/
+.product-card.dark {
+  background-color: #343A46;
+  border-color: #3A3F4B;
+}
+
+.product-card.dark .card-body {
+  background-color: #2B2F3A;
+  color: #E0E0E0;
+  border-top: 1px solid #3A3F4B;
+  border-bottom: 1px solid #3A3F4B;
+}
+
+.product-card.dark .card-price {
+  background-color: #1C1F26;
+  color: #E6E6E6;
+  border-top: 1px solid #3A3F4B;
+}
+
+.product-card.dark .card-title {
+  color: #E6E6E6;
+}
+
+.product-card.dark .btn-detail {
+  background-color: #00ADB5;
+  color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(0, 173, 181, 0.3);
 }
 
-.btn-detail:hover {
+.product-card.dark .btn-detail:hover {
   background-color: #019CA4;
   box-shadow: 0 4px 12px rgba(0, 173, 181, 0.5);
   transform: translateY(-2px);
 }
 
-.btn-detail:active {
+.product-card.dark .btn-detail:active {
   background-color: #008D93;
+  transform: translateY(0);
+}
+
+/*light*/
+.product-card.light {
+  background-color: #FFFFFF;
+  border-color: #DCE3EE;
+}
+
+.product-card.light .card-body {
+  background-color: #FFFFFF;
+  color: #1F2937;
+  border-top: 1px solid #E5EAF3;
+  border-bottom: 1px solid #E5EAF3;
+}
+
+.product-card.light .card-price {
+  background-color: #F8FAFF;
+  color: #1F2937;
+  border-top: 1px solid #E5EAF3;
+}
+
+.product-card.light .card-title {
+  color: #1F2937;
+}
+
+.product-card.light .btn-detail {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+}
+
+.product-card.light .btn-detail:hover {
+  background-color: #2563EB;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px);
+}
+
+.product-card.light .btn-detail:active {
+  background-color: #1D4ED8;
   transform: translateY(0);
 }

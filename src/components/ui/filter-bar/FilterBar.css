@@ -1,7 +1,30 @@
-.filter-bar{
-    background-color: #013133;
-    color: #fff;
-    border-color: #00ADB5;
-    border-radius: 5px;
-    padding: 10px;
+/*base*/
+.filter-bar {
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+/*dark*/
+.filter-bar.dark {
+  background-color: #013133;
+  color: #ffffff;
+  border: 1px solid #00adb5;
+}
+
+.filter-bar.dark:focus {
+  box-shadow: 0 0 0 0.15rem rgba(0, 173, 181, 0.45);
+}
+
+/*light*/
+.filter-bar.light {
+  background-color: #ffffff;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+}
+
+.filter-bar.light:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 0.15rem rgba(59, 130, 246, 0.35);
 }

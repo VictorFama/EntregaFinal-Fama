@@ -1,3 +1,18 @@
-.contenedor-itemlist{
-    padding: 20px;
+/* base*/
+.contenedor-itemlist {
+  padding: 20px;
+}
+
+.itemlist-title {
+  font-weight: 700;
+}
+
+/*dark*/
+.itemlist-title.dark {
+  color: #E6E6E6;
+}
+
+/*light*/
+.itemlist-title.light {
+  color: #1F2937;
 }

@@ -1,13 +1,18 @@
+/*base*/
+.home-page {
+  padding: 20px;
+}
+
 .home-figure {
   margin: 40px 0;
   text-align: center;
 }
 
-.home-title{
-    text-align: center;
-    margin-top: 30px;
-    color: #00ADB5;
-    font-size: 3.5rem;
+.home-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 .home-info {
@@ -15,16 +20,38 @@
   margin: 40px 0;
 }
 
-.home-subtitle{
-    color: #00ADB5;
-    margin-bottom: 10px;
-    font-size: 2.5rem;
+.home-subtitle {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.home-text{
-    font-size: 1.2rem;
-    color: #ccc9c9;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    margin-right: 20px;
+.home-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/*dark*/
+.home-page.dark .home-title,
+.home-page.dark .home-subtitle {
+  color: #00ADB5;
+}
+
+.home-page.dark .home-text {
+  color: #ccc9c9;
+}
+
+/*light*/
+.home-page.light .home-title {
+  color: #1F2937;
+}
+
+.home-page.light .home-subtitle {
+  color: #3B82F6;
+}
+
+.home-page.light .home-text {
+  color: #4B5563;
 }

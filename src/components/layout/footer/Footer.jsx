@@ -1,11 +1,12 @@
 import './Footer.css';
+import { useContext } from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
-
-
 const Footer = () => {
+    const { dark } = useContext(ThemeContext);
     return (
-            <footer className="footer-propio">
+            <footer className={`footer-propio ${dark ? "dark" : "light"}`}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12">

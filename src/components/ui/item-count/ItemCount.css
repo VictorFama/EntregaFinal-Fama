@@ -1,28 +1,69 @@
+/*base*/
 .item-count {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #1E1E1E;
-  border: 1px solid #3A3F4B;
   border-radius: 8px;
   padding: 8px 12px;
   width: fit-content;
   margin-top: 10px;
+  border: 1px solid;
 }
 
 .item-count-btn {
-  background-color: #00ADB5;
-  color: #E6E6E6;
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 
-.item-count-btn:hover {
+.item-count-number {
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/*dark*/
+.item-count.dark {
+  background-color: #1E1E1E;
+  border-color: #3A3F4B;
+}
+
+.item-count.dark .item-count-number {
+  color: #E6E6E6;
+}
+
+.item-count.dark .item-count-btn {
+  background-color: #00ADB5;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 173, 181, 0.3);
+}
+
+.item-count.dark .item-count-btn:hover {
   background-color: #019CA4;
   box-shadow: 0 4px 12px rgba(0, 173, 181, 0.5);
 }
 
 
+/*light*/
+.item-count.light {
+  background-color: #FFFFFF;
+  border-color: #DCE3EE;
+}
+
+.item-count.light .item-count-number {
+  color: #1F2937;
+}
+
+.item-count.light .item-count-btn {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.3);
+}
+
+.item-count.light .item-count-btn:hover {
+  background-color: #2563EB;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+}

@@ -1,3 +1,18 @@
-.contenedor-itemdetail{
-    padding: 20px;
+/*base*/
+.contenedor-itemdetail {
+  padding: 20px;
+}
+
+.itemdetail-title {
+  font-weight: 700;
+}
+
+/*dark*/
+.itemdetail-title.dark {
+  color: #E6E6E6;
+}
+
+/*light*/
+.itemdetail-title.light {
+  color: #1F2937;
 }

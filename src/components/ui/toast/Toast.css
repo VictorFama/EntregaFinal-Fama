@@ -1,0 +1,55 @@
+/*base*/
+.toast-custom {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  min-width: 260px;
+  max-width: 360px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+/*dark*/
+.toast-custom.dark {
+  background-color: #FFFFFF;  
+  color: #1F2937;      
+  border-color: #DCE3EE;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.toast-custom.dark .toast-body {
+  background-color: #F8FAFF;
+  color: #111827;
+}
+
+.toast-custom.dark .btn-secondary {
+  background-color: #3B82F6;
+  color: #FFF;
+  border-color: #3B82F6;
+}
+
+.toast-custom.dark .btn-secondary:hover {
+  background-color: #2563EB;
+}
+
+/*light*/
+.toast-custom.light {
+  background-color: #1F2937;
+  color: #F9FAFB;     
+  border-color: #374151;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+.toast-custom.light .toast-body {
+  background-color: #111827;
+  color: #F3F4F6;
+}
+
+.toast-custom.light .btn-secondary {
+  background-color: #4B5563;
+  color: #FFFFFF;
+  border-color: #4B5563;
+}
+
+.toast-custom.light .btn-secondary:hover {
+  background-color: #374151;
+}

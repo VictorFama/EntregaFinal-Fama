@@ -1,0 +1,30 @@
+/*base*/
+.cart-row {
+  margin-bottom: 60px;
+}
+
+.cart-title {
+  font-weight: 700;
+}
+
+.cart-empty {
+  font-size: 1.2rem;
+}
+
+/*dark*/
+.contenedor-cart.dark .cart-title {
+  color: #E6E6E6;
+}
+
+.contenedor-cart.dark .cart-empty {
+  color: #ccc;
+}
+
+/*light*/
+.contenedor-cart.light .cart-title {
+  color: #1F2937;
+}
+
+.contenedor-cart.light .cart-empty {
+  color: #4B5563;
+}

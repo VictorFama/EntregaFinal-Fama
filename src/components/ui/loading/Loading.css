@@ -1,0 +1,24 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.loading-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/*dar*/
+.loading.dark {
+  background-color: #00ADB5
+}
+
+/*light*/
+.loading.light {
+  background-color: #2563EB
+}
+
