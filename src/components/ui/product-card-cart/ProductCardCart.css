@@ -4,6 +4,7 @@
   overflow: hidden;
   border: 1px solid;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
 }
 
 .product-cart-card:hover {

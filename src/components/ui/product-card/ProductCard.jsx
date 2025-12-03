@@ -2,6 +2,8 @@ import './ProductCard.css';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ThemeContext } from '../../../context/ThemeContext';
+import MainButton from "../../ui/main-button/MainButton";
+
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
@@ -18,7 +20,9 @@ const ProductCard = ({ product }) => {
       </div>
       <div className="card-footer d-flex justify-content-between align-items-center card-price">
         <span className="fw-bold">${product.price}</span>
-        <button onClick={navigateProductDetail} className="btn-detail">Ver detalle</button>
+        <MainButton onClick={navigateProductDetail}>
+            Ver detalle
+        </MainButton>
       </div>
     </div>
   );

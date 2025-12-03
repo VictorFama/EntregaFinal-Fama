@@ -5,6 +5,7 @@ import { CartContext } from '../../../context/CartContext';
 import { ToastContext } from "../../../context/ToastContext";
 import useCount from '../../hooks/useCount';
 import ItemCount from '../item-count/ItemCount';
+import MainButton from "../../ui/main-button/MainButton";
 
 const ProductCardDetail = ({ product }) => {
 
@@ -35,7 +36,7 @@ const ProductCardDetail = ({ product }) => {
               <p className="card-text product-card-detail-price">${product.price}</p>
               <div className="product-card-detail-actions">
                 <ItemCount count={count} increment={increment} decrement={decrement}/>
-                <button onClick={handleAddCartProduct} className="product-card-detail-btn">Agregar al carrito</button>
+                <MainButton onClick={handleAddCartProduct}>Agregar al carrito</MainButton>
               </div>
             </div>
           </div>

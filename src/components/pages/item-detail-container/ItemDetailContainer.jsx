@@ -5,6 +5,7 @@ import { ThemeContext } from "../../../context/ThemeContext";
 import { db } from "../../../firebase";
 import { collection, getDocs, where, query } from "firebase/firestore";
 import ProductCardDetail from "../../ui/product-card-detail/ProductCardDetail";
+import Loading from "../../ui/loading/Loading";
 
 const ItemDetailContainer = () => {
   const { productId } = useParams();
@@ -21,6 +22,7 @@ const ItemDetailContainer = () => {
           where("id", "==", Number(productId))
         );
         const snapshotProduct = await getDocs(queryProduct);
+
         if (!snapshotProduct.empty) {
           const doc = snapshotProduct.docs[0];
           const productDb = {
@@ -35,17 +37,31 @@ const ItemDetailContainer = () => {
       } catch (error) {
         console.error("Error al cargar producto:", error);
         setProduct(null);
+      } finally {
+        setTimeout(() => {
+          setLoading(false);
+        }, 800);
       }
     };
+
     getProduct();
   }, [productId]);
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className={`container mt-4 contenedor-itemdetail ${dark ? "dark" : "light"}`}>
       <h2 className={`text-center mb-4 itemdetail-title ${dark ? "dark" : "light"}`}>
         Detalle del producto
       </h2>
-      {product ? (<ProductCardDetail product={product}/>) : (<p className="text-center">Cargando producto...</p>)}
+
+      {product ? (
+        <ProductCardDetail product={product} />
+      ) : (
+        <p className="text-center">Producto no encontrado.</p>
+      )}
     </div>
   );
 };

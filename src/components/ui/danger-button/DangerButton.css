@@ -1,0 +1,45 @@
+/*base*/
+.danger-btn {
+  border: none;
+  font-weight: 600;
+  padding: 0.45rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/*dark*/
+.danger-btn.dark {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.35);
+}
+
+.danger-btn.dark:hover {
+  background-color: #B91C1C;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.5);
+  transform: translateY(-2px);
+}
+
+.danger-btn.dark:active {
+  background-color: #991B1B;
+  transform: translateY(0);
+}
+
+/*light*/
+.danger-btn.light {
+  background-color: #EF4444;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.35);
+}
+
+.danger-btn.light:hover {
+  background-color: #DC2626;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+  transform: translateY(-2px);
+}
+
+.danger-btn.light:active {
+  background-color: #B91C1C;
+  transform: translateY(0);
+}

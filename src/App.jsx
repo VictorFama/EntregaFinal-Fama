@@ -10,6 +10,7 @@ import NotFound from './components/pages/notfound/NotFound';
 import ItemListContainer from './components/pages/item-list-container/ItemListContainer';
 import ItemDetailContainer from './components/pages/item-detail-container/ItemDetailContainer';
 import Cart from './components/pages/cart/cart';  
+import Checkout from './components/pages/checkout/checkout';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 path="/itemlist" element={<ItemListContainer/>}/>
               <Route path="/itemdetail/:productId" element={<ItemDetailContainer/>} />
               <Route path="/cart" element={<Cart/>} />
+              <Route path="/checkout" element={<Checkout/>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer/>

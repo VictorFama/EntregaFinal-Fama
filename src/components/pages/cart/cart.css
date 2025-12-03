@@ -11,6 +11,13 @@
   font-size: 1.2rem;
 }
 
+.cart-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+
 /*dark*/
 .contenedor-cart.dark .cart-title {
   color: #E6E6E6;
@@ -19,6 +26,7 @@
 .contenedor-cart.dark .cart-empty {
   color: #ccc;
 }
+
 
 /*light*/
 .contenedor-cart.light .cart-title {

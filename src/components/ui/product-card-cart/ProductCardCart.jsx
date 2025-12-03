@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { CartContext } from "../../../context/CartContext";
 import { ToastContext } from "../../../context/ToastContext";
+import { DangerButton } from "../danger-button/DangerButton";
 
 const ProductCardCart = ({ product, quantity }) => {
   const { dark } = useContext(ThemeContext);
@@ -17,8 +18,7 @@ const ProductCardCart = ({ product, quantity }) => {
   };
 
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div className={`card h-100 product-cart-card ${dark ? "dark" : "light"}`}>
+      <div className={`card product-cart-card ${dark ? "dark" : "light"}`}>
         <img src={product.image} className="card-img-top product-card-detail-img" alt={product.title}/>
 
         <div className="card-body text-center">
@@ -26,10 +26,9 @@ const ProductCardCart = ({ product, quantity }) => {
           <p className="cart-text">Cantidad: {quantity} unidades</p>
           <p className="cart-text">Precio Unitario: ${product.price}</p>
           <p className="cart-text">Precio Total: ${total}</p>
-          <button onClick={handleDeleteCartProduct} className="product-card-cart-btn">Eliminar</button>
+          <DangerButton onClick={handleDeleteCartProduct}>Eliminar</DangerButton>
         </div>
       </div>
-    </div>
   );
 };
 
