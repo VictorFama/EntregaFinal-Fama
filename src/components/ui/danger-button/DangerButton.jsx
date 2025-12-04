@@ -6,10 +6,7 @@ export const DangerButton = ({ children, onClick }) => {
   const { dark } = useContext(ThemeContext);
 
   return (
-    <button 
-      className={`danger-btn ${dark ? "dark" : "light"}`} 
-      onClick={onClick}
-    >
+    <button className={`danger-btn ${dark ? "dark" : "light"}`} onClick={onClick}>
       {children}
     </button>
   );

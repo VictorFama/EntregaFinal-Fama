@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-.principal {
-  text-align: center;
+html, body {
+  height: 100%;
 }
 
 body {
@@ -14,6 +14,21 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.principal {
+  text-align: center;
+}
 
 /*dark*/
 body.dark {
@@ -21,9 +36,8 @@ body.dark {
   color: #E6E6E6;
 }
 
-
 /*light*/
 body.light {
   background-color: #F3F6FB;
-  color: #1F2937;            
+  color: #1F2937;
 }

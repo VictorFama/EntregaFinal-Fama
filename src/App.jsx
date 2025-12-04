@@ -11,14 +11,17 @@ import ItemListContainer from './components/pages/item-list-container/ItemListCo
 import ItemDetailContainer from './components/pages/item-detail-container/ItemDetailContainer';
 import Cart from './components/pages/cart/cart';  
 import Checkout from './components/pages/checkout/checkout';
+import Success from "./components/pages/success/Success";
+
 
 function App() {
   return (
     <CartProvider>
-        <ThemeProvider>    
-      <ToastProvider>
+      <ThemeProvider>    
+        <ToastProvider>
           <BrowserRouter>
             <Navbar />
+            <div className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route
@@ -27,11 +30,13 @@ function App() {
               <Route path="/cart" element={<Cart/>} />
               <Route path="/checkout" element={<Checkout/>} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/success" element={<Success />} />
             </Routes>
+            </div>
             <Footer/>
           </BrowserRouter>
-      </ToastProvider>
-        </ThemeProvider>
+        </ToastProvider>
+      </ThemeProvider>
     </CartProvider>
   );
 }

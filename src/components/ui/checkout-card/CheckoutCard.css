@@ -2,12 +2,32 @@
 .checkout-card {
   border-radius: 0.75rem;
   border: 1px solid;
+  margin-bottom: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .checkout-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.checkout-card-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.checkout-card-row {
+  align-items: center;
+}
+
+.checkout-card-col-image {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-card-col-subtotal {
+  text-align: right;
+  padding-right: 1.5rem;
 }
 
 .checkout-card-img {
@@ -18,14 +38,13 @@
 }
 
 .checkout-card-subtitle {
-  font-size: 0.85rem;
+  font-size: 1rem;
   opacity: 0.8;
 }
 
 .checkout-card-subtotal {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
-
 
 /*dark*/
 .checkout-card.dark {
@@ -39,6 +58,7 @@
 }
 
 .checkout-card.dark .checkout-card-title {
+  font-size: 1.5rem;
   color: #FFFFFF;
 }
 

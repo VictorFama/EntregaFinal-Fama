@@ -27,7 +27,6 @@ const Cart = () => {
 
         const productsDb = collection(db, "productos");
         const ids = cart.map((p) => p.id);
-
         const q = query(productsDb, where("id", "in", ids));
         const snapshot = await getDocs(q);
 
@@ -54,7 +53,6 @@ const Cart = () => {
         }, 800);
       }
     };
-
     getProducts();
   }, [cart]);
 
@@ -74,10 +72,7 @@ const Cart = () => {
 
       <div className="row justify-content-center cart-row">
         {items.map((item) => (
-          <div
-            key={item.id}
-            className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
-          >
+          <div key={item.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
             <ProductCardCart product={item} quantity={item.quantity} />
           </div>
         ))}

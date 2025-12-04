@@ -1,9 +1,19 @@
 /*base*/
-.filter-bar {
+.filters-bar-container {
   border-radius: 0.5rem;
   padding: 0.4rem 0.75rem;
   font-size: 0.95rem;
   outline: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filters-bar-row {
+  justify-content: center;
+}
+
+.filters-bar-col {
+  padding: 0;
 }
 
 /*dark*/

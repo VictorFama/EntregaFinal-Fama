@@ -12,7 +12,12 @@
   font-weight: 600;
 }
 
-/*dar*/
+.loading {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/*dark*/
 .loading.dark {
   background-color: #00ADB5
 }

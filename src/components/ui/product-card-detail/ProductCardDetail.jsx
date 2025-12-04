@@ -24,7 +24,7 @@ const ProductCardDetail = ({ product }) => {
     }
 
   return (
-<div className={`container card mb-3 product-card-detail ${dark ? "dark" : "light"}`}>
+      <div className={`container card product-card-detail ${dark ? "dark" : "light"}`}>
         <div className="row g-0">
           <div className="col-md-4">
             <img src={product.image} className="card-img-top product-card-detail-img" alt={product.title} />

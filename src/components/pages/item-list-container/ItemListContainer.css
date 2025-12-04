@@ -1,10 +1,13 @@
 /* base*/
 .contenedor-itemlist {
   padding: 20px;
+  margin-top: 1.5rem;      
 }
 
 .itemlist-title {
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 /*dark*/

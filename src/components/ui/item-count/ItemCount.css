@@ -46,6 +46,10 @@
   box-shadow: 0 4px 12px rgba(0, 173, 181, 0.5);
 }
 
+.item-count-btn:active {
+  transform: scale(0.95);
+}
+
 
 /*light*/
 .item-count.light {

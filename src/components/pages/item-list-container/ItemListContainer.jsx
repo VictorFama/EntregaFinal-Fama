@@ -21,7 +21,8 @@ const ItemListContainer = () => {
         const productsData = snapshotProduct.docs.map((doc) => ({
           firestoreId: doc.id,
           ...doc.data(),
-        }));
+        }))
+        .filter((product) => product.stock > 0);
         setProducts(productsData);
       } catch (error) {
         console.error("Error al cargar productos:", error);
@@ -31,7 +32,6 @@ const ItemListContainer = () => {
         }, 800);
       }
     };
-
     getProducts();
   }, []);
 
@@ -45,31 +45,15 @@ const ItemListContainer = () => {
   }
 
   return (
-    <div
-      className={`container mt-4 contenedor-itemlist ${
-        dark ? "dark" : "light"
-      }`}
-    >
-      <h2
-        className={`text-center mb-4 itemlist-title ${
-          dark ? "dark" : "light"
-        }`}
-      >
+    <div className={`container contenedor-itemlist ${dark ? "dark" : "light"}`}>
+      <h2 className={`itemlist-title ${dark ? "dark" : "light"}`}>
         Lista de productos
       </h2>
+      <FiltersBar categories={categories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory}/>
 
-      <FiltersBar
-        categories={categories}
-        selectedCategory={selectedCategory}
-        onCategoryChange={setSelectedCategory}
-      />
-
-      <div className="row g-3 justify-content-center mt-3">
+      <div className="row g-3 contenedor-itemlist-row">
         {filteredProducts.map((product) => (
-          <div
-            key={product.firestoreId}
-            className="col-12 col-sm-6 col-md-4 col-lg-3"
-          >
+          <div key={product.firestoreId} className="col-12 col-sm-6 col-md-4 col-lg-3">
             <ProductCard product={product} />
           </div>
         ))}

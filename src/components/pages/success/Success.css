@@ -1,0 +1,39 @@
+/*base*/
+.success-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.success-container h2 {
+  font-size: 1.8rem; 
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.success-container p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 0.3rem;
+}
+
+.order-id {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 1.2rem;
+}
+
+/*dark*/
+.success-container.dark {
+  color: #e5e7eb;
+}
+
+/*light*/
+.success-container.light {
+  color: #1f2937;
+}

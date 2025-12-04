@@ -7,10 +7,7 @@ const Loading = () => {
 
   return (
     <div className="loading-container">
-      <div
-        className={`spinner-grow loading ${dark ? "dark" : "light"}`}
-        role="status"
-      >
+      <div className={`spinner-grow loading ${dark ? "dark" : "light"}`} role="status">
         <span className="visually-hidden">Loading...</span>
       </div>
       <p className="loading-text">Loading...</p>
