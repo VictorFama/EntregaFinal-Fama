@@ -1,16 +1,161 @@
-# React + Vite
+# 🛒 Proyecto Final – E-commerce en React  
+### Autor: Fama Victor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descripción
+Este proyecto es una **Single Page Application (SPA)** desarrollada como Trabajo Final del curso de React.  
+La aplicación permite navegar productos, ver sus detalles, agregar items al carrito y finalizar una compra, la cual se registra en **Firebase Firestore**.
 
-Currently, two official plugins are available:
+Se utilizaron conceptos centrales del curso: componentes, hooks, React Router, Context API, separación contenedor/presentación y uso de Firebase Firestore como base de datos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Funcionalidades principales
+- **Listado de productos** desde Firestore.
+- **Detalle del producto** con selector de cantidad (ItemCount).
+- **Carrito global** implementado con Context API:
+  - Agregar, eliminar, limpiar.
+  - Cálculo automático de totales.
+- **Checkout** con formulario y generación de orden en Firestore.
+- **Pantalla de éxito** mostrando el ID de compra.
+- **Loaders**, **toasts**, mensajes condicionales y manejo de errores.
+- **Tema claro/oscuro**.
+- Navegación sin recarga gracias a **React Router DOM**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🔥 Integración con Firebase
+Firestore se usa para:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Colecciones:
+- **productos** → consumida para el catálogo y detalle.  
+- **ordenes** → se almacena cada compra con:
+  - comprador  
+  - items  
+  - total  
+  - timestamp  
+
+Ejemplo de orden guardada:
+
+```json
+{
+  "buyer": { "name": "Victor", "email": "Victor@test"},
+  "items": [
+    { "id": "4", "title": "Asus ROG Zephyrus G14", "unitPrice": 2499, "quantity": 5, "subtotal": 12495 }
+  ],
+  "total": 12495,
+  "createdAt": "serverTimestamp()"
+}
+```
+
+---
+
+## 🧱 Tecnologías utilizadas
+  - React + Vite  
+  - React Router DOM  
+  - Context API  
+  - Firebase / Firestore 
+  - CSS modularizado
+  - Hooks personalizados (useCount)
+
+  ---
+  ## 📂 Estructura final del proyecto
+  ```json
+  react/
+ ├── public/
+ │   └── jsons/
+ │       └── products.json        (archivo de referencia, no usado en la app)
+ │
+ ├── src/
+ │   ├── assets/
+ │   │   └── react.svg
+ │   │
+ │   ├── components/
+ │   │   ├── hooks/
+ │   │   │   └── useCount.jsx
+ │   │   │
+ │   │   ├── layout/
+ │   │   │   ├── footer/
+ │   │   │   │   ├── Footer.css
+ │   │   │   │   └── Footer.jsx
+ │   │   │   └── navbar/
+ │   │   │       ├── Navbar.css
+ │   │   │       └── Navbar.jsx
+ │   │   │
+ │   │   ├── pages/
+ │   │   │   ├── cart/
+ │   │   │   │   ├── Cart.css
+ │   │   │   │   └── Cart.jsx
+ │   │   │   ├── checkout/
+ │   │   │   │   ├── Checkout.css
+ │   │   │   │   └── Checkout.jsx
+ │   │   │   ├── home/
+ │   │   │   │   ├── Home.css
+ │   │   │   │   └── Home.jsx
+ │   │   │   ├── item-detail-container/
+ │   │   │   │   ├── ItemDetailContainer.css
+ │   │   │   │   └── ItemDetailContainer.jsx
+ │   │   │   ├── item-list-container/
+ │   │   │   │   ├── ItemListContainer.css
+ │   │   │   │   └── ItemListContainer.jsx
+ │   │   │   ├── notfound/
+ │   │   │   │   └── NotFound.jsx
+ │   │   │   └── success/
+ │   │   │       ├── Success.css
+ │   │   │       └── Success.jsx
+ │   │   │
+ │   │   ├── ui/
+ │   │   │   ├── cart-widget/
+ │   │   │   │   ├── CartWidget.css
+ │   │   │   │   └── CartWidget.jsx
+ │   │   │   ├── checkout-card/
+ │   │   │   │   ├── CheckoutCard.css
+ │   │   │   │   └── CheckoutCard.jsx
+ │   │   │   ├── danger-button/
+ │   │   │   │   ├── DangerButton.css
+ │   │   │   │   └── DangerButton.jsx
+ │   │   │   ├── item-count/
+ │   │   │   │   ├── ItemCount.css
+ │   │   │   │   └── ItemCount.jsx
+ │   │   │   ├── loading/
+ │   │   │   │   ├── Loading.css
+ │   │   │   │   └── Loading.jsx
+ │   │   │   ├── main-button/
+ │   │   │   │   ├── MainButton.css
+ │   │   │   │   └── MainButton.jsx
+ │   │   │   ├── product-card/
+ │   │   │   │   ├── ProductCard.css
+ │   │   │   │   └── ProductCard.jsx
+ │   │   │   ├── product-card-cart/
+ │   │   │   │   ├── ProductCardCart.css
+ │   │   │   │   └── ProductCardCart.jsx
+ │   │   │   ├── product-card-detail/
+ │   │   │   │   ├── ProductCardDetail.css
+ │   │   │   │   └── ProductCardDetail.jsx
+ │   │   │   ├── toast/
+ │   │   │   │   ├── Toast.css
+ │   │   │   │   └── Toast.jsx
+ │   │   │   └── button-theme/
+ │   │   │       ├── ButtonTheme.jsx
+ │   │   │       └── ButtonTheme.jsx
+ │   │   │
+ │   ├── context/
+ │   │   ├── CartContext.jsx
+ |   |   ├── ThemeContext.jsx
+ |   |   └── ToastContext.jsx
+ │   │
+ │   ├── App.jsx
+ │   ├── App.css
+ │   ├── firebase.js
+ │   ├── index.css
+ │   └── main.jsx
+ │
+ ├── package.json
+ ├── vite.config.js
+ └── README.md
+  ```
+---
+## ⚙️ Instalación y ejecución
+  ```json
+  npm install
+  npm run dev
+  ```

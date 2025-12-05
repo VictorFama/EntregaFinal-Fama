@@ -9,8 +9,8 @@ import Home from './components/pages/home/Home';
 import NotFound from './components/pages/notfound/NotFound';
 import ItemListContainer from './components/pages/item-list-container/ItemListContainer';
 import ItemDetailContainer from './components/pages/item-detail-container/ItemDetailContainer';
-import Cart from './components/pages/cart/cart';  
-import Checkout from './components/pages/checkout/checkout';
+import Cart from './components/pages/cart/Cart';  
+import Checkout from './components/pages/checkout/Checkout';
 import Success from "./components/pages/success/Success";
 
 
