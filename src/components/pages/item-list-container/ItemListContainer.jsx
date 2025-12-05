@@ -51,9 +51,9 @@ const ItemListContainer = () => {
       </h2>
       <FiltersBar categories={categories} selectedCategory={selectedCategory} onCategoryChange={setSelectedCategory}/>
 
-      <div className="row g-3 contenedor-itemlist-row">
+      <div className="row g-3 products-row">
         {filteredProducts.map((product) => (
-          <div key={product.firestoreId} className="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div key={product.firestoreId} className="col-12 col-sm-6 col-md-4 col-lg-3 product-column">
             <ProductCard product={product} />
           </div>
         ))}

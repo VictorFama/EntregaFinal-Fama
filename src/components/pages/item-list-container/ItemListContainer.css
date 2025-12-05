@@ -10,6 +10,16 @@
   margin-bottom: 1.5rem;
 }
 
+.products-row {
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.product-column {
+  display: flex;
+  justify-content: center;
+}
+
 /*dark*/
 .itemlist-title.dark {
   color: #E6E6E6;

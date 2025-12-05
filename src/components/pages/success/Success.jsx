@@ -14,9 +14,7 @@ const Success = () => {
     const navigate = useNavigate();
 
   return (
-    <div className={`success-container ${
-        dark ? "dark" : "light"
-      }`}>
+    <div className={`success-container ${dark ? "dark" : "light"}`}>
         <h2>¡Gracias por su compra!</h2>
         <p>Su número de orden es:</p>
         <h3 className="order-id">{orderId}</h3>
